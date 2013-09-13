@@ -1,0 +1,16 @@
+{
+    "Legal": [
+        {
+            "Name": "Terms of Use",
+            "URL": "http://kinlane.github.io/va-developer/legal/terms-of-use.html"
+        },
+        {
+            "Name": "Privacy Policy",
+            "URL": "http://kinlane.github.io/va-developer/legal/privacy-policy.html"
+        },
+        {
+            "Name": "Branding Guidelines",
+            "URL": "http://kinlane.github.io/va-developer/legal/branding-guidelines.html"
+        }
+    ]
+}

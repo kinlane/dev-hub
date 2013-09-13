@@ -1,0 +1,175 @@
+{
+    "apiVersion": "1.0",
+    "swaggerVersion": "1.2",
+    "basePath": "http://api.va.apievangelist.com/v1",
+    "resourcePath": "/programs",
+    "produces": [
+        "application/json"
+    ],
+    "apis": [
+        {
+            "path": "/programs/",
+            "operations": [
+                {
+                    "method": "GET",
+                    "summary": "Pulls a listing of some of the VA programs for veterans",
+                    "notes": "Returns a list of VA programs, allowing you to filter by state, type and keyword query. You can also apply a custom callback to the JSON response.",
+                    "nickname": "getPrograms",
+                    "type": "programs",
+                    "parameters": [
+                        {
+                            "name": "query",
+                            "description": "a text query to search across programs",
+                            "required": false,
+                            "allowMultiple": false,
+                            "dataType": "string",
+                            "paramType": "query"
+                        },
+                        {
+                            "name": "state",
+                            "description": "a us state to filter programs by",
+                            "required": false,
+                            "allowMultiple": false,
+                            "dataType": "string",
+                            "paramType": "query"
+                        },
+                        {
+                            "name": "type",
+                            "description": "a type of program to filter by. see program/types for values.",
+                            "required": false,
+                            "allowMultiple": false,
+                            "dataType": "string",
+                            "paramType": "query"
+                        }
+                    ],
+                    "produces": [
+                        "application/json"
+                    ],
+                    "responseMessages": [
+                        {
+                            "code": 404,
+                            "message": "There are no Application Informations"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "/programs/{id}",
+            "operations": [
+                {
+                    "method": "GET",
+                    "summary": "Retrieve a individual program using it's ID",
+                    "notes": "Returns a programs full detail",
+                    "type": "programs",
+                    "nickname": "getProgram",
+                    "produces": [
+                        "application/json"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "id",
+                            "description": "id for the program, notice this is in the path, not a query variable",
+                            "required": false,
+                            "allowMultiple": false,
+                            "dataType": "integer",
+                            "paramType": "path"
+                        }
+                    ],
+                    "responseMessages": [
+                        {
+                            "code": 400,
+                            "message": "Invalid Application Information ID supplied"
+                        },
+                        {
+                            "code": 404,
+                            "message": "Application Information not found"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "/programs/types/",
+            "operations": [
+                {
+                    "method": "GET",
+                    "summary": "Pulls a listing of the types of VA program",
+                    "notes": "Returns a list of VA program types. You can also apply a custom callback to the JSON response.",
+                    "nickname": "getProgramTypes",
+                    "type": "programstype",
+                    "parameters": [
+                        {
+                            "name": "callback",
+                            "description": "the callback for the API call",
+                            "required": false,
+                            "allowMultiple": false,
+                            "dataType": "string",
+                            "paramType": "query"
+                        }
+                    ],
+                    "produces": [
+                        "application/json"
+                    ],
+                    "responseMessages": [
+                        {
+                            "code": 404,
+                            "message": "There are no Application Informations"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "models": {
+        "programs": {
+            "id": "programs",
+            "properties": {
+                "program_id": {
+                    "type": "integer"
+                },
+                "facility_id": {
+                    "type": "integer"
+                },
+                "facility_name": {
+                    "type": "string"
+                },
+                "program_name": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "state": {
+                    "type": "string"
+                },
+                "postal_code": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "contact_name": {
+                    "type": "string"
+                },
+                "contact_phone": {
+                    "type": "string"
+                }
+            }
+        },
+        "programstype": {
+            "id": "programstype",
+            "properties": {
+                "type": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

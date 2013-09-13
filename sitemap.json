@@ -1,0 +1,86 @@
+{
+    "Pages": [
+        {
+            "Name": "Landing Page",
+            "URL": "http://kinlane.github.io/dev-hub/"
+        },
+        {
+            "Name": "Getting Started",
+            "URL": "http://kinlane.github.io/dev-hub/getting-started.html"
+        },
+        {
+            "Name": "APIs",
+            "URL": "http://kinlane.github.io/dev-hub/api.html"
+        },
+        {
+            "Name": "Data",
+            "URL": "http://kinlane.github.io/dev-hub/data.html"
+        },
+        {
+            "Name": "Code",
+            "URL": "http://kinlane.github.io/dev-hub/code.html"
+        },
+        {
+            "Name": "Gallery",
+            "URL": "http://kinlane.github.io/dev-hub/gallery.html"
+        },
+        {
+            "Name": "Support",
+            "URL": "http://kinlane.github.io/dev-hub/support.html"
+        },
+        {
+            "Name": "Roadmap",
+            "URL": "http://kinlane.github.io/dev-hub/roadmap.html"
+        },
+        {
+            "Name": "Blog",
+            "URL": "http://kinlane.github.io/dev-hub/blog.html"
+        },
+        {
+            "Name": "Terms of Use",
+            "URL": "http://kinlane.github.io/dev-hub/legal/terms-of-use.html"
+        },
+        {
+            "Name": "Privacy Policy",
+            "URL": "http://kinlane.github.io/dev-hub/legal/privacy-policy.html"
+        },
+        {
+            "Name": "Branding Guidelines",
+            "URL": "http://kinlane.github.io/dev-hub/legal/branding-guidelines.html"
+        }
+    ],
+    "Building Blocks": [
+        {
+            "Name": "API",
+            "URL": "http://kinlane.github.io/dev-hub/api.json"
+        },
+        {
+            "Name": "Data",
+            "URL": "http://kinlane.github.io/dev-hub/data.json"
+        },
+        {
+            "Name": "Code",
+            "URL": "http://kinlane.github.io/dev-hub/json/code.json"
+        },
+        {
+            "Name": "Gallery",
+            "URL": "http://kinlane.github.io/dev-hub/json/gallery.json"
+        },
+        {
+            "Name": "Support",
+            "URL": "http://kinlane.github.io/dev-hub/json/support.json"
+        },
+        {
+            "Name": "Roadmap",
+            "URL": "http://kinlane.github.io/dev-hub/json/roadmap.json"
+        },
+        {
+            "Name": "Changelog",
+            "URL": "http://kinlane.github.io/dev-hub/json/changelog.json"
+        },
+        {
+            "Name": "Legal",
+            "URL": "http://kinlane.github.io/dev-hub/json/legal.json"
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+---
+layout: default
+title: Data
+overview: true
+---
+
+<ul class="toolbar">
+    <li>{"<a href="http://kinlane.github.io/va-developer/data.json" title="JSON" target="_blank">JSON</a>"}</li>
+</ul>
+<h2>Data</h2>
+<p>This is a listing of datasets currently available from the Department of Veterans Affairs. Some of these datasets are also available via an API, but this represents a complete lists of files, which are also represented in the data.json file.</p>
+
+<!-- Begin List Code Samples--->
+{% raw  %}
+<script id="dataAccessTemplate" type="text/template">       
+    <a href="{{accessURL}}" target="_blank"><strong>{{format}}</strong></a>                                                                                             
+</script>
+<script id="dataListingTemplate" type="text/template">       
+    <tr>
+        <td width="30%"><strong>{{title}}</strong></td>
+        <td>{{keyword}}</td>
+        <td id="date-{{identifier}}">{{modified}}</td>    
+        <td>{{publisher}}</td>
+        <td id="listing-{{identifier}}">&nbsp;</td>         
+    </tr>                                                                                          
+</script>
+{% endraw %}
+
+<div style="">
+     <table id="dataListing" border="0" width="100%" align="left" cellpadding="5" cellspacing="5">
+        <tr>
+            <td width="30%"><strong>Title</strong></td>
+            <td><strong>Keywords</strong></td>
+            <td><strong>Last Modified</strong></td>  
+            <td><strong>Publisher</strong></td>
+            <td><strong>Links</strong></td>       
+        </tr>           
+     </table>
+</div> 
+
+<script type="text/javascript">
+    function listData()
+        {
+        $.getJSON('/va-developer/data.json', function(data) {
+             $.each(data, function(key, val) {
+                
+                var template = $('#dataListingTemplate').html();
+                var html = Mustache.to_html(template, val);
+                $('#dataListing').append(html); 
+                
+                id = val['identifier'];
+
+                $.each(val['distribution'], function(key2, val2) {   
+                    
+                    var template2 = $('#dataAccessTemplate').html();
+                    var html2 = Mustache.to_html(template2, val2);                    
+                    $('#listing-'+id).append(html2); 
+                    
+                    });                      
+                });
+            });
+        } 
+    listData();
+</script>
+<!-- End List Code Simples--->

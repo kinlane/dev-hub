@@ -1,0 +1,71 @@
+---
+layout: default
+title: Sitemap
+overview: true
+---
+
+<ul class="toolbar">
+    <li>{"<a href="{{BASE_PATH}}sitemap.json" title="JSON" target="_blank">JSON</a>"}</li>
+</ul>
+<h2>Sitemap</h2>
+<p>This is a listing of all the pages, and building blocks that make up the Dev Hub portal. Everything here you can navigate via HTML and programmatically via JSON, all accessible from this single sitemap.</p>
+<div class="row">
+    <div class="span2">&nbsp;</div>
+    <div class="span4">
+        
+        {% raw  %}
+        <script id="sitemapPagesListingTemplate" type="text/template">       
+             <li><a href="{{URL}}"><strong>{{Name}}</strong></a></li>                                                                                               
+        </script>
+        {% endraw %}        
+        
+        <script type="text/javascript">
+        function listAPIs()
+            {
+            $.getJSON('sitemap.json', function(data) {
+                toggle = 0;
+                 $.each(data['Pages'], function(key, val) {
+                    var template = $('#sitemapPagesListingTemplate').html();
+                    var html = Mustache.to_html(template, val);
+                    $('#sitemapPagesListing').append(html);                          
+                    });
+                });
+            } 
+        listAPIs();
+        </script>      
+
+        <h3>Pages</h3>
+        <div style="height: 300px; overflow: auto;">
+            <ul id="sitemapPagesListing"></ul>
+        </div>
+    </div>
+    <div class="span3">
+        
+        {% raw  %}
+        <script id="sitemapBuildingBlocksTemplate" type="text/template">       
+            <li><a href="{{URL}}"><strong>{{Name}}</strong></a></li>                                                                                                 
+        </script>
+        {% endraw %}        
+        
+        <script type="text/javascript">
+        function listAPIs()
+            {
+            $.getJSON('sitemap.json', function(data) {
+                toggle = 0;
+                 $.each(data['Building Blocks'], function(key, val) {
+                    var template = $('#sitemapBuildingBlocksTemplate').html();
+                    var html = Mustache.to_html(template, val);
+                    $('#sitemapBuildingBlocksListing').append(html);                          
+                    });
+                });
+            } 
+        listAPIs();
+        </script>      
+
+        <h3>Building Blocks</h3>
+        <div style="height: 300px; overflow: auto;">
+            <ul id="sitemapBuildingBlocksListing"></ul>
+        </div>
+    </div>
+    <div class="span2">&nbsp;</div>
+</div>

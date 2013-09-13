@@ -1,0 +1,78 @@
+---
+layout: default
+title: Roadmap
+overview: true
+---
+
+<h2>Roadmap</h2>
+<p>This section is all about providing you with a roadmap of where we are going with this developers area, as well as what changes we've made in accordance with our roadmap. This section provides transparency into how the developer program is evolving, and give you a heads up on where we are going, hopefully you will provide feedback that we can integrate into the roadmap as well.</p>
+<div class="row">
+    <div class="span6">
+        
+        {% raw  %}
+        <script id="roadmapListingTemplate" type="text/template">       
+            <li><strong>{{Name}}</strong>&nbsp;<i>({{Date}})</i>&nbsp;-&nbsp;{{Description}}</li>                                                                                               
+        </script>
+        {% endraw %}        
+        
+        <script type="text/javascript">
+        function listRoadmap()
+            {
+            $.getJSON('json/roadmap.json', function(data) {
+                toggle = 0;
+                 $.each(data['Roadmap'], function(key, val) {
+                    var template = $('#roadmapListingTemplate').html();
+                    var html = Mustache.to_html(template, val);
+                    $('#roadmapListing').append(html);                          
+                    });
+                });
+            } 
+        listRoadmap();
+        </script>      
+
+        <ul class="toolbar">
+            <li>{"<a href="{{BASE_PATH}}json/roadmap.json" title="JSON" target="_blank">JSON</a>"}</li>
+        </ul>
+
+        <h3>Roadmap</h3>
+        <div style="height: 300px; overflow: auto;">
+            <ul id="roadmapListing"></ul>
+        </div>
+        
+    </div>
+    <div class="span6">
+        
+        {% raw  %}
+        <script id="changelogListingTemplate" type="text/template">       
+            <li><strong>{{Name}}</strong>&nbsp;<i>({{Date}})</i>&nbsp;-&nbsp;{{Description}}</li>                                                                                               
+        </script>
+        {% endraw %}        
+        
+        <script type="text/javascript">
+        function listChangelog()
+            {
+            $.getJSON('json/changelog.json', function(data) {
+                toggle = 0;
+                 $.each(data['Changelog'], function(key, val) {
+                    var template = $('#changelogListingTemplate').html();
+                    var html = Mustache.to_html(template, val);
+                    $('#changelogListing').append(html);                          
+                    });
+                });
+            } 
+        listChangelog();
+        </script>      
+
+        <ul class="toolbar">
+            <li>{"<a href="json/changelog.json" title="JSON" target="_blank">JSON</a>"}</li>
+        </ul>
+
+        <h3>Changelog</h3>
+        <div style="height: 300px; overflow: auto;">
+            <ul id="changelogListing"></ul>
+        </div>
+        
+    </div>
+</div>
+<br />
+<p align="center">To provide feedback on our roadmap, visit the <a href="../support/">support section</a>, and provide us feedback through one of our existing support channels.</p>

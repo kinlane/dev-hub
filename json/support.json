@@ -1,0 +1,41 @@
+{
+    "Self-Service Support": [
+        {
+            "Name": "Stack Exchange",
+            "Description": "We actively submit and respond to conversations that occur on Stack Exchange and encourage you to visit Stack Exchange and search for topics related to using VA APIs and datasets.",
+            "URL": "http://stackexchange.com/"
+        },
+        {
+            "Name": "Quora",
+            "Description": "We actively submit and respond to conversations that occur on Quora and encourage you to visit Quora and search for topics related to using VA APIs and datasets.",
+            "URL": "http://quora.com/"
+        }
+    ],
+    "Direct Support": [
+        {
+            "Name": "Submit A Github Issue",
+            "Description": "This entire developer portal is hosted on Github as a repository. Using your Github account you can submit an issue as part of the repository and we will respond as part of the regular support process.",
+            "URL": "https://github.com/kinlane/va-developer/issues"
+        },
+        {
+            "Name": "Twitter",
+            "Description": "You are welcome to ping us on Twitter publicly, letting us now how we can help.",
+            "URL": "https://twitter.com/kinlane"
+        },
+        {
+            "Name": "LinkedIn",
+            "Description": "You are welcome to ping us on LinkedIn publicly, letting us now how we can help.",
+            "URL": "http://www.linkedin.com/in/kinlane"
+        },
+        {
+            "Name": "Facebook",
+            "Description": "You are welcome to ping us on Facebook publicly, letting us now how we can help.",
+            "URL": "https://www.facebook.com/kinlane"
+        },
+        {
+            "Name": "Google+",
+            "Description": "You are welcome to ping us on Google+ publicly, letting us now how we can help.",
+            "URL": "https://plus.google.com/106460238807821851374"
+        }
+    ]
+}

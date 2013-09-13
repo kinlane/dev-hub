@@ -1,0 +1,21 @@
+{
+  "apiVersion": "1.0",
+  "espiVersion": "1.1",
+  "apis": [
+    {
+    	"name": "Facilities",
+      	"path": "http://kinlane.github.io/dev-hub/api/endpoints/facilities",
+      	"description": "Resources about facilities"
+    },
+    {
+    	"name": "Programs",
+      	"path": "http://kinlane.github.io/dev-hub/api/endpoints/programs",
+      	"description": "Resources about programs"
+    },
+    {
+    	"name": "Press Releases",
+      	"path": "http://kinlane.github.io/dev-hub/api/endpoints/press",
+      	"description": "Press releases"
+    }      
+  ]
+}

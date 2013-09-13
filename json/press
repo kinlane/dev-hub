@@ -1,0 +1,128 @@
+{
+    "apiVersion": "1.0",
+    "swaggerVersion": "1.2",
+    "basePath": "http://api.va.apievangelist.com/v1",
+    "resourcePath": "/press",
+    "produces": [
+        "application/json"
+    ],
+    "apis": [
+        {
+            "path": "/press/",
+            "operations": [
+                {
+                    "method": "GET",
+                    "summary": "Pull VA press releases",
+                    "notes": "Returns a list of VA press releases, allowing you to filter by start date, end date and keyword query. You can also apply a custom callback to the JSON response.",
+                    "nickname": "getPress",
+                    "type": "press",
+                    "parameters": [
+                        {
+                            "name": "query",
+                            "description": "a text query to search across press releases",
+                            "required": false,
+                            "allowMultiple": false,
+                            "dataType": "string",
+                            "paramType": "query"
+                        },
+                        {
+                            "name": "date-start",
+                            "description": "the beginning date to filter by (ie. 02/05/2013)",
+                            "required": false,
+                            "allowMultiple": false,
+                            "dataType": "date",
+                            "paramType": "query"
+                        },
+                        {
+                            "name": "date-end",
+                            "description": "the end date to filter by (ie. 02/05/2013)",
+                            "required": false,
+                            "allowMultiple": false,
+                            "dataType": "date",
+                            "paramType": "query"
+                        },
+                        {
+                            "name": "callback",
+                            "description": "the callback for API call",
+                            "required": false,
+                            "allowMultiple": false,
+                            "dataType": "string",
+                            "paramType": "query"
+                        }
+                    ],
+                    "produces": [
+                        "application/json"
+                    ],
+                    "responseMessages": [
+                        {
+                            "code": 404,
+                            "message": "There are no Application Informations"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "/press/{id}",
+            "operations": [
+                {
+                    "method": "GET",
+                    "summary": "Retrieve a press release using it's ID",
+                    "notes": "Returns a press release detail",
+                    "type": "press",
+                    "nickname": "getPress",
+                    "produces": [
+                        "application/json"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "id",
+                            "description": "press id for the release, notice this is in the path, not a query variable",
+                            "required": false,
+                            "allowMultiple": false,
+                            "dataType": "integer",
+                            "paramType": "path"
+                        },
+                        {
+                            "name": "callback",
+                            "description": "the callback for API call",
+                            "required": false,
+                            "allowMultiple": false,
+                            "dataType": "string",
+                            "paramType": "query"
+                        }
+                    ],
+                    "responseMessages": [
+                        {
+                            "code": 400,
+                            "message": "Invalid Application Information ID supplied"
+                        },
+                        {
+                            "code": 404,
+                            "message": "Application Information not found"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "models": {
+        "press": {
+            "id": "press",
+            "properties": {
+                "press_id": {
+                    "type": "integer"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "post_date": {
+                    "type": "string"
+                },
+                "body": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

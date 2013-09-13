@@ -1,0 +1,54 @@
+{
+    "Changelog": [
+        {
+            "Name": "Put all JSON files into /data",
+            "Date": "9/08/2013",
+            "Description": "I put all the JSOn files into central /data folder, except for api.json, data.json and sitemap.json."
+        },    
+        {
+            "Name": "Standardized API interface and data models",
+            "Date": "9/08/2013",
+            "Description": "I sstandardized the API endpoints and data models somewhat and stopped programmtically generating them for a while, until I stabilize the approach."
+        },
+        {
+            "Name": "Setting up the Github Repository",
+            "Date": "9/01/2013",
+            "Description": "I setup a Github repository that is being used to host this entire developer portal."
+        },
+        {
+            "Name": "Created Github Page for Repository",
+            "Date": "9/01/2013",
+            "Description": "Using the Github repository I configured a Github Page to be the public face of this developer area."
+        },
+        {
+            "Name": "Downloaded and Published Default Jekyll Site",
+            "Date": "9/01/2013",
+            "Description": "I downloaded the base Jekyll Site template to overwrite the default Github pages template"
+        },
+        {
+            "Name": "Integrated Twitter Bootstrap",
+            "Date": "9/01/2013",
+            "Description": "I downloaded Twitter Bootstrap template and integrated with the default Jekyll site template to give a fuller set of UI features and make the template to 508 compliant."
+        },
+        {
+            "Name": "Created VA Facility API",
+            "Date": "9/01/2013",
+            "Description": "I created a REST VA facility from the data currently available in the VA location web service. The API was not complete and problematic for developing a facade, so I just recreated."
+        },
+        {
+            "Name": "Created VA PTSD API",
+            "Date": "9/01/2013",
+            "Description": "I created a REST VA PTSD program locator from the data currently available in the VA PTSD web service. The API was not complete and problematic for developing a facade, so I just recreated."
+        },
+        {
+            "Name": "Created VA Substance Abuse API",
+            "Date": "9/01/2013",
+            "Description": "I created a REST VA substance abuse program locator from the data currently available on the site form locator. There is no API for this data currently, but it is publicly available."
+        },
+        {
+            "Name": "Created VA Press API",
+            "Date": "9/01/2013",
+            "Description": "I created a REST VA press release API from the data currently available on the web site. There is no API for this data currently, but it is publicly available."
+        }
+    ]
+}

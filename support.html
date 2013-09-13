@@ -1,0 +1,71 @@
+---
+layout: default
+title: Support
+overview: true
+---
+
+<ul class="toolbar">
+    <li>{"<a href="{{BASE_PATH}}json/support.json" title="JSON" target="_blank">JSON</a>"}</li>
+</ul>
+<h2>Support</h2>
+<p>There are two distinct ways to get support around this developers area. 1) Self-Service Support and 2) Direct Support. We encourage you to use self-service support mechanisms as this can be done askynchronously and often meet your needs immediatly. If you cannot get your question answered this way, please contact us directly and we'll respond as soon as possible.</p>
+<div class="row">
+    <div class="span6">
+        
+        {% raw  %}
+        <script id="selfServiceSupportListingTemplate" type="text/template">       
+            <li><a href="{{URL}}"><strong>{{Name}}</strong></a> - {{Description}}</li>                                                                                               
+        </script>
+        {% endraw %}        
+        
+        <script type="text/javascript">
+        function listAPIs()
+            {
+            $.getJSON('json/support.json', function(data) {
+                toggle = 0;
+                 $.each(data['Self-Service Support'], function(key, val) {
+                    var template = $('#selfServiceSupportListingTemplate').html();
+                    var html = Mustache.to_html(template, val);
+                    $('#selfServiceSupportListing').append(html);                          
+                    });
+                });
+            } 
+        listAPIs();
+        </script>      
+
+        <h3>Self-Service Support</h3>
+        <div style="height: 300px; overflow: auto;">
+            <ul id="selfServiceSupportListing"></ul>
+        </div>
+    </div>
+    <div class="span6">
+        
+        {% raw  %}
+        <script id="directSupportListingTemplate" type="text/template">       
+            <li><a href="{{URL}}"><strong>{{Name}}</strong></a> - {{Description}}</li>                                                                                               
+        </script>
+        {% endraw %}        
+        
+        <script type="text/javascript">
+        function listAPIs()
+            {
+            $.getJSON('json/support.json', function(data) {
+                toggle = 0;
+                 $.each(data['Direct Support'], function(key, val) {
+                    var template = $('#directSupportListingTemplate').html();
+                    var html = Mustache.to_html(template, val);
+                    $('#directSupportListing').append(html);                          
+                    });
+                });
+            } 
+        listAPIs();
+        </script>      
+
+        <h3>Direct Support</h3>
+        <div style="height: 300px; overflow: auto;">
+            <ul id="directSupportListing"></ul>
+        </div>
+    </div>
+</div>
+<br />
+<p align="center">Support is critical to the success of this developers portal. Please provide feedback and help us make sure this program is successful. Open data and APIs are a partnership between us, the provider and you the developer / consumer.</p>

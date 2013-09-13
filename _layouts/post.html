@@ -1,0 +1,39 @@
+{% include top.html %}
+
+<body class="wrap">
+    
+  {% include header.html %}
+
+  <section>  
+      
+      <div class="container">
+        
+          {{ content }}
+        
+            <div class="row" align="center" style="padding-top: 10px; padding-botto: 10px;">
+                <div class="pagination">
+                  <ul>
+                  {% if page.previous %}
+                    <li class="prev"><a href="{{BASE_PATH}}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+                  {% else %}
+                    <li class="prev disabled"><a>&larr; Previous</a></li>
+                  {% endif %}
+                    <li><a href="{{BASE_PATH}}blog/">Return to Main Blog Page</a></li>
+                  {% if page.next %}
+                    <li class="next"><a href="{{BASE_PATH}}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+                  {% else %}
+                    <li class="next disabled"><a>Next &rarr;</a>
+                  {% endif %}
+                  </ul>
+                </div>
+            </div>
+                
+        </div>
+        
+  </section>  
+
+  {% include footer.html %}
+  {% include analytics.html %}
+
+</body>
+</html>
