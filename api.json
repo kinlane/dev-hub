@@ -4,17 +4,17 @@
   "apis": [
     {
     	"name": "Facilities",
-      	"path": "http://kinlane.github.io/dev-hub/api/endpoints/facilities",
+      	"path": "http://kinlane.github.io/dev-hub/json/facilities",
       	"description": "Resources about facilities"
     },
     {
     	"name": "Programs",
-      	"path": "http://kinlane.github.io/dev-hub/api/endpoints/programs",
+      	"path": "http://kinlane.github.io/dev-hub/json/programs",
       	"description": "Resources about programs"
     },
     {
     	"name": "Press Releases",
-      	"path": "http://kinlane.github.io/dev-hub/api/endpoints/press",
+      	"path": "http://kinlane.github.io/dev-hub/json/press",
       	"description": "Press releases"
     }      
   ]
