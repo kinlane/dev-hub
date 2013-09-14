@@ -41,7 +41,7 @@ overview: true
 <script type="text/javascript">
     function listData()
         {
-        $.getJSON('/va-developer/data.json', function(data) {
+        $.getJSON('data.json', function(data) {
              $.each(data, function(key, val) {
                 
                 var template = $('#dataListingTemplate').html();
