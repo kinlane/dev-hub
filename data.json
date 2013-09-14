@@ -1,17 +1,17 @@
 [
     {
-        "title": "VA Complete Data Catalog",
+        "title": "Complete Data Catalog",
         "description": "Version 1.0",
         "keyword": "catalog",
         "modified": "2013-09-01 06:00:00",
-        "publisher": "US Department of Veterans Affairs",
+        "publisher": "API Evangelist",
         "person": "Kin Lane",
         "mbox": "kin.lane@va.org",
         "identifier": "1",
         "accessLevel": "public",
         "distribution": [
             {
-                "accessURL": "http://kinlane.github.io/va-developer/data/data.json",
+                "accessURL": "http://kinlane.github.io/dev-hub/json/data.json",
                 "format": "json"
             }
         ]
@@ -19,16 +19,16 @@
     {
         "title": "Facilities",
         "description": "Version 1.0",
-        "keyword": "Veterans,Facilities",
+        "keyword": "Facilities",
         "modified": "2013-09-01 06:00:00",
-        "publisher": "US Department of Veterans Affairs",
+        "publisher": "API Evangelist",
         "person": "Kin Lane",
         "mbox": "kin.lane@va.gov",
         "identifier": "2",
         "accessLevel": "public",
         "distribution": [
             {
-                "accessURL": "http://kinlane.github.io/va-developer/data/facilities.json",
+                "accessURL": "http://kinlane.github.io/dev-hub/json/facilities.json",
                 "format": "json"
             }
         ]
@@ -36,16 +36,16 @@
     {
         "title": "Programs",
         "description": "Version 1.0",
-        "keyword": "Veterans,Programs",
+        "keyword": "Programs",
         "modified": "2013-09-01 06:00:00",
-        "publisher": "US Department of Veterans Affairs",
+        "publisher": "API Evangelist",
         "person": "Kin Lane",
         "mbox": "kin.lane@va.gov",
         "identifier": "3",
         "accessLevel": "public",
         "distribution": [
             {
-                "accessURL": "http://kinlane.github.io/va-developer/data/programs.json",
+                "accessURL": "http://kinlane.github.io/dev-hub/json/programs.json",
                 "format": "json"
             }
         ]
@@ -53,16 +53,16 @@
     {
         "title": "Press",
         "description": "Version 1.0",
-        "keyword": "Veterans,Press,News",
+        "keyword": "Press,News",
         "modified": "2013-09-01 06:00:00",
-        "publisher": "US Department of Veterans Affairs",
+        "publisher": "API Evangelist",
         "person": "Kin Lane",
         "mbox": "kin.lane@va.gov",
         "identifier": "4",
         "accessLevel": "public",
         "distribution": [
             {
-                "accessURL": "http://kinlane.github.io/va-developer/data/press.json",
+                "accessURL": "http://kinlane.github.io/dev-hub/json/press.json",
                 "format": "json"
             }
         ]
