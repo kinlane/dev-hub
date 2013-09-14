@@ -1,7 +1,7 @@
 {
     "apiVersion": "1.0",
     "swaggerVersion": "1.2",
-    "basePath": "http://api.va.apievangelist.com/v1",
+    "basePath": "http://api.devhub.apievangelist.com/v1",
     "resourcePath": "/facilities",
     "produces": [
         "application/json"
@@ -12,8 +12,8 @@
             "operations": [
                 {
                     "method": "GET",
-                    "summary": "Finds all VA facilities",
-                    "notes": "Returns a list of all VA facilities, allowing you to filter by state, type, region and keyword query. You can also apply a custom callback to the JSON response.",
+                    "summary": "Finds all facilities",
+                    "notes": "Returns a list of all facilities, allowing you to filter by state, type, region and keyword query. You can also apply a custom callback to the JSON response.",
                     "nickname": "getFacilities",
                     "type": "facilities",
                     "parameters": [
@@ -119,7 +119,7 @@
                 {
                     "method": "GET",
                     "summary": "Retrieve a listing of facility types.",
-                    "notes": "Returns a list of all VA facility types, You can also apply a custom callback to the JSON response.",
+                    "notes": "Returns a list of all facility types, You can also apply a custom callback to the JSON response.",
                     "nickname": "getfacilitiestypes",
                     "type": "facilitiestype",
                     "parameters": [
