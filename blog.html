@@ -1,13 +1,12 @@
 ---
-layout: post
+layout: default
 title: "Dev Hub"
 published: true
 ---
 
 <h1 class="title">Dev Hub Blog</h1>
 
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
+{% for post in site.posts limit:5000 %}
 <div class="post">
     
     <p><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}" style="color:#000;"><h4><strong>{{ post.title }}</strong></h4></a>
