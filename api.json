@@ -1,21 +1,196 @@
 {
-  "apiVersion": "1.0",
-  "espiVersion": "1.1",
+  "name": "Dev Hub",
+  "description": "This is a prototype repository of APIs and data. These APIs, data, tools and resourecs are intended to provide developers with what they need to develop web and mobile applications, design data visualizations and stories using public resources.",
+  "image": "https://s3.amazonaws.com/kinlane-productions/public-private-sector/black-puzzle-500.png",
+  "url": "http://kinlane.github.io/dev-hub/",
   "apis": [
     {
-    	"name": "Facilities",
-      	"path": "http://kinlane.github.io/dev-hub/json/facilities",
-      	"description": "Resources about facilities"
+      "name": "Facilities",
+      "description": "Demo API resource of all facilities.",
+      "image": "https://s3.amazonaws.com/kinlane-productions/public-private-sector/black-puzzle-500.png",
+      "human-url": "http://kinlane.github.io/dev-hub/api.html",
+      "machine-url": "http://kinlane.github.io/dev-hub/json/facilities",
+      "tags": "facilities, government",
+      "urls": [
+        {
+          "type": "code",
+          "url": "http://kinlane.github.io/dev-hub/code.html"
+        },
+        {
+          "type": "swagger",
+          "url": "http://kinlane.github.io/dev-hub/json/facilities"
+        },
+        {
+          "type": "gallery",
+          "url": "http://kinlane.github.io/dev-hub/gallery.html"
+        },
+        {
+          "type": "support",
+          "url": "http://kinlane.github.io/dev-hub/support.html"
+        },
+        {
+          "type": "roadmap",
+          "url": "http://kinlane.github.io/dev-hub/roadmap.html"
+        },
+        {
+          "type": "blog",
+          "url": "http://kinlane.github.io/dev-hub/blog.html"
+        }
+      ],
+      "contact": [
+        {
+          "type": "email",
+          "url": "info@apievangelist.com"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/kinlane/"
+        }
+      ],
+      "meta": [
+        {
+          "key": "interface-license",
+          "vallue": "CC BY 3.0"
+        },
+        {
+          "type": "pricing",
+          "url": "Free"
+        }
+      ]
     },
     {
-    	"name": "Programs",
-      	"path": "http://kinlane.github.io/dev-hub/json/programs",
-      	"description": "Resources about programs"
+      "name": "Programs",
+      "description": "Demo API resource of all government programs.",
+      "image": "https://s3.amazonaws.com/kinlane-productions/public-private-sector/black-puzzle-500.png",
+      "human-url": "http://kinlane.github.io/dev-hub/api.html",
+      "machine-url": "http://kinlane.github.io/dev-hub/json/programs",
+      "tags": "programs, government",
+      "urls": [
+        {
+          "type": "code",
+          "url": "http://kinlane.github.io/dev-hub/code.html"
+        },
+        {
+          "type": "swagger",
+          "url": "http://kinlane.github.io/dev-hub/json/facilities"
+        },
+        {
+          "type": "gallery",
+          "url": "http://kinlane.github.io/dev-hub/gallery.html"
+        },
+        {
+          "type": "support",
+          "url": "http://kinlane.github.io/dev-hub/support.html"
+        },
+        {
+          "type": "roadmap",
+          "url": "http://kinlane.github.io/dev-hub/roadmap.html"
+        },
+        {
+          "type": "blog",
+          "url": "http://kinlane.github.io/dev-hub/blog.html"
+        }
+      ],
+      "contact": [
+        {
+          "type": "email",
+          "url": "info@apievangelist.com"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/kinlane/"
+        }
+      ],
+      "meta": [
+        {
+          "key": "interface-license",
+          "vallue": "CC BY 3.0"
+        },
+        {
+          "type": "pricing",
+          "url": "Free"
+        }
+      ]
     },
     {
-    	"name": "Press Releases",
-      	"path": "http://kinlane.github.io/dev-hub/json/press",
-      	"description": "Press releases"
-    }      
-  ]
+      "name": "Press",
+      "description": "Demo API resource of all government press releases.",
+      "image": "https://s3.amazonaws.com/kinlane-productions/public-private-sector/black-puzzle-500.png",
+      "human-url": "http://kinlane.github.io/dev-hub/api.html",
+      "machine-url": "http://kinlane.github.io/dev-hub/json/press",
+      "tags": "press, news, government",
+      "urls": [
+        {
+          "type": "code",
+          "url": "http://kinlane.github.io/dev-hub/code.html"
+        },
+        {
+          "type": "swagger",
+          "url": "http://kinlane.github.io/dev-hub/json/facilities"
+        },
+        {
+          "type": "gallery",
+          "url": "http://kinlane.github.io/dev-hub/gallery.html"
+        },
+        {
+          "type": "support",
+          "url": "http://kinlane.github.io/dev-hub/support.html"
+        },
+        {
+          "type": "roadmap",
+          "url": "http://kinlane.github.io/dev-hub/roadmap.html"
+        },
+        {
+          "type": "blog",
+          "url": "http://kinlane.github.io/dev-hub/blog.html"
+        }
+      ],
+      "contact": [
+        {
+          "type": "email",
+          "url": "info@apievangelist.com"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/kinlane/"
+        }
+      ],
+      "meta": [
+        {
+          "key": "interface-license",
+          "vallue": "CC BY 3.0"
+        },
+        {
+          "type": "pricing",
+          "url": "Free"
+        }
+      ]
+    }    
+  ],
+  "include": [
+    {
+      "name": "API Evangelist",
+      "url": "http://apievangelist.com/api.json"
+    },
+    {
+      "type": "API Commons",
+      "url": "http://apicommons.org/api.json"
+    }
+  ],
+  "maintainer": [
+    {
+      "type": "Name",
+      "url": "Kin Lane"
+    },
+    {
+      "type": "email",
+      "url": "info@apievangelist.com"
+    },
+    {
+      "type": "twitter",
+      "url": "https://twitter.com/kinlane/"
+    }
+  ],
+  "tags": "government, API, Application Programming Interface, developer, facilities, programs, press",
+  "modified": "04/07/2014"
 }
