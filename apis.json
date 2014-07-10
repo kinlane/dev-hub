@@ -1,0 +1,154 @@
+{
+  "name": "Dev Hub",
+  "description": "This is a prototype repository of APIs and data. These APIs, data, tools and resourecs are intended to provide developers with what they need to develop web and mobile applications, design data visualizations and stories using public resources.",
+  "image": "https://s3.amazonaws.com/kinlane-productions/public-private-sector/black-puzzle-500.png",
+  "url": "http://kinlane.github.io/dev-hub/",
+  "created": "04/07/2014",
+  "modified": "07/09/2014",
+  "url": "http://publicprivatesector.org",
+  "specificationversion": "0.14",    
+  "apis": [
+    {
+      "name": "Facilities",
+      "description": "Demo API resource of all facilities.",
+      "image": "https://s3.amazonaws.com/kinlane-productions/public-private-sector/black-puzzle-500.png",
+      "humanUrl": "http://kinlane.github.io/dev-hub/api.html",
+      "baseUrl": "http://kinlane.github.io/dev-hub/json/facilities",
+      "tags": "facilities, government",
+      "properties": [
+        {
+          "type": "code",
+          "url": "http://kinlane.github.io/dev-hub/code.html"
+        },
+        {
+          "type": "swagger",
+          "url": "http://kinlane.github.io/dev-hub/json/facilities"
+        },
+        {
+          "type": "gallery",
+          "url": "http://kinlane.github.io/dev-hub/gallery.html"
+        },
+        {
+          "type": "support",
+          "url": "http://kinlane.github.io/dev-hub/support.html"
+        },
+        {
+          "type": "roadmap",
+          "url": "http://kinlane.github.io/dev-hub/roadmap.html"
+        },
+        {
+          "type": "blog",
+          "url": "http://kinlane.github.io/dev-hub/blog.html"
+        }
+      ],
+      "contact": [
+        {
+          "FN": "API Evangliest",
+          "email": "info@apievangelist.com",
+          "X-twitter": "apievangelist"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "description": "Demo API resource of all government programs.",
+      "image": "https://s3.amazonaws.com/kinlane-productions/public-private-sector/black-puzzle-500.png",
+      "humanUrl": "http://kinlane.github.io/dev-hub/api.html",
+      "baseUrl": "http://kinlane.github.io/dev-hub/json/programs",
+      "tags": "programs, government",
+      "properties": [
+        {
+          "type": "code",
+          "url": "http://kinlane.github.io/dev-hub/code.html"
+        },
+        {
+          "type": "swagger",
+          "url": "http://kinlane.github.io/dev-hub/json/facilities"
+        },
+        {
+          "type": "gallery",
+          "url": "http://kinlane.github.io/dev-hub/gallery.html"
+        },
+        {
+          "type": "support",
+          "url": "http://kinlane.github.io/dev-hub/support.html"
+        },
+        {
+          "type": "roadmap",
+          "url": "http://kinlane.github.io/dev-hub/roadmap.html"
+        },
+        {
+          "type": "blog",
+          "url": "http://kinlane.github.io/dev-hub/blog.html"
+        }
+      ],
+      "contact": [
+        {
+          "FN": "API Evangliest",
+          "email": "info@apievangelist.com",
+          "X-twitter": "apievangelist"
+        }
+      ]
+    },
+    {
+      "name": "Press",
+      "description": "Demo API resource of all government press releases.",
+      "image": "https://s3.amazonaws.com/kinlane-productions/public-private-sector/black-puzzle-500.png",
+      "humanUrl": "http://kinlane.github.io/dev-hub/api.html",
+      "baseUrl": "http://kinlane.github.io/dev-hub/json/press",
+      "tags": "press, news, government",
+      "properties": [
+        {
+          "type": "code",
+          "url": "http://kinlane.github.io/dev-hub/code.html"
+        },
+        {
+          "type": "swagger",
+          "url": "http://kinlane.github.io/dev-hub/json/facilities"
+        },
+        {
+          "type": "gallery",
+          "url": "http://kinlane.github.io/dev-hub/gallery.html"
+        },
+        {
+          "type": "support",
+          "url": "http://kinlane.github.io/dev-hub/support.html"
+        },
+        {
+          "type": "roadmap",
+          "url": "http://kinlane.github.io/dev-hub/roadmap.html"
+        },
+        {
+          "type": "blog",
+          "url": "http://kinlane.github.io/dev-hub/blog.html"
+        }
+      ],
+      "contact": [
+        {
+          "FN": "API Evangliest",
+          "email": "info@apievangelist.com",
+          "X-twitter": "apievangelist"
+        }
+      ]
+    }    
+  ],
+  "include": [
+    {
+      "name": "API Evangelist",
+      "url": "http://apievangelist.com/api.json"
+    },
+    {
+      "type": "API Commons",
+      "url": "http://apicommons.org/api.json"
+    }
+  ],
+  "maintainer": [
+    {
+      "name": "Kin",
+      "twitter": "apievangelist",
+      "email": "kin@email.com"
+    }
+  ],
+  "tags": "government, API, Application Programming Interface, developer, facilities, programs, press",
+  "modified": "07/09/2014"
+}
